@@ -1,0 +1,129 @@
+export const siteConfig = {
+  name: "Mohamed Abdi Ahmed",
+  role: "Full-Stack Software Engineer",
+  tagline:
+    "I turn manual processes into polished, reliable web platforms, from database to interface.",
+  description:
+    "Full-stack engineer building web applications with React, Next.js, TypeScript, Supabase and PostgreSQL.",
+  email: "mohamadeyaminka29@gmail.com",
+  cv: "/CV.pdf",
+  
+  socials: {
+    github: "https://github.com/mohatech008",
+    linkedin: "https://www.linkedin.com/in/mohamed-ahmed-6a75a226a/",
+  },
+  techStrip: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
+};
+
+export type Project = {
+  title: string;
+  subtitle: string;
+  role: string; // FIXED: this was missing
+  problem: string;
+  solution: string;
+  contribution?: string[];
+  features: string[];
+  stack: string[];
+  image?: string;
+  github?: string;
+  live?: string;
+};
+
+export const projects: Project[] = [
+  {
+    title: "ADE Association",
+    image: "/projects/ade.png",
+    subtitle: "Professional Community Management Platform",
+    role: "Full-Stack Engineer",
+    problem:
+      "Professional associations struggle with manual membership processes, scattered records, fragmented communication and a weak online presence.",
+    solution:
+      "A responsive web platform that digitises membership registration, centralises member data and streamlines administration, with an admin dashboard, automated emails and a public organisational site.",
+    features: [
+      "Online membership registration and application management",
+      "Secure admin authentication with role-based access",
+      "Member approval and rejection workflows",
+      "Automated membership status email notifications",
+      "Passport photo upload and management",
+      "Administrative reporting and data export",
+      "Responsive organisational website",
+    ],
+    stack: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Supabase Storage",
+      "Resend",
+    ],
+    github: "",
+    live: "https://adeassociation.org/",
+  },
+  {
+    title: "Enkaj",
+    image: "/projects/enkaj.png",
+    subtitle: "Real Estate Marketplace for Kenya",
+    role: "Frontend Engineer",
+    problem:
+      "Finding a rental or property in Nairobi usually means dealing with middlemen, hidden fees and unverified listings, while landlords struggle to reach genuine, pre-screened tenants.",
+    solution:
+      "A digital property marketplace that connects seekers directly with verified owners and providers. Seekers search with smart filters and book viewings online; providers manage listings and track performance from a dedicated dashboard.",
+    // DRAFT: edit these so they match what you actually built
+    contribution: [
+      "Built responsive, mobile-first interfaces with React and Tailwind CSS",
+      "Implemented property search and filtering UI",
+      "Developed the provider dashboard screens",
+      "Integrated the frontend with Supabase and PostgreSQL data",
+    ],
+    features: [
+      "Property search for rentals, student housing, offices and homes for sale",
+      "Smart filters by budget, distance and commute time",
+      "Direct messaging between seekers and providers",
+      "Book-to-view scheduling for verified viewings",
+      "Provider dashboard with listing management and availability toggles",
+      "Listing performance analytics",
+    ],
+    stack: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+    ],
+    github: "",
+    live: "https://www.enkaj.com",
+  },
+];
+export const skillGroups = [
+  {
+    title: "Frontend",
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    title: "Backend & Data",
+    items: ["Supabase", "PostgreSQL", "REST APIs"],
+  },
+  {
+    title: "Tools & Services",
+    items: ["Resend", "Git", "GitHub"],
+  },
+  {
+    title: "Deployment & Hosting",
+    items: ["Vercel", "Netlify"],
+  },
+];
+
+export type Experience = {
+  role: string;
+  company: string;
+  period: string;
+  points: string[];
+};
+
+// Add real entries here and the Experience section appears automatically.
+// Example:
+// { role: "Frontend Engineer", company: "Enkaj", period: "2025 – Present",
+//   points: ["Built ...", "Shipped ..."] }
+export const experience: Experience[] = [];
