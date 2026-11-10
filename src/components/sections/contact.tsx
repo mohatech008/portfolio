@@ -3,6 +3,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/data/site";
 
+const whatsappNumber = siteConfig.phone.replace(/\D/g, ""); // "+254712345678" -> "254712345678"
+
 const methods = [
   {
     label: "Email",
@@ -19,7 +21,7 @@ const methods = [
   {
     label: "WhatsApp",
     value: "Chat with me",
-    href: `https://wa.me/${siteConfig.whatsapp}`,
+    href: `https://wa.me/${whatsappNumber}`,
     Icon: FaWhatsapp,
     external: true,
   },

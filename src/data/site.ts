@@ -38,9 +38,8 @@ export const siteConfig = {
   description:
     "Full-stack engineer building web applications with React, Next.js, TypeScript, Supabase and PostgreSQL.",
   email: "mohamadeyaminka29@gmail.com",
-    phone: "+254700000000",          
-  phoneDisplay: "+254724094850", 
-  whatsapp: "254724094850",         
+  phone: "+254724094850",          
+  phoneDisplay: "+254724094850",          
   cv: "/CV.pdf",
   socials: {
     github: "https://github.com/mohatech008",
