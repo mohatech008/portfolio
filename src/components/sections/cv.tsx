@@ -33,7 +33,7 @@ export function CV() {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <a
             href={siteConfig.cv}
-            download="CV.pdf"
+            download="Mohamed Abdi Ahmed_CV.pdf"
             className={buttonVariants({ size: "lg" })}
           >
             <Download className="h-4 w-4" /> Download CV
